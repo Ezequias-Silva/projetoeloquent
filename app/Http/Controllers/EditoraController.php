@@ -12,4 +12,8 @@ class EditoraController extends Controller
       $editoras = Editora::all();
       return View('editora.index',compact('editoras'));
     }
+
+    public function show(Editora $editora){
+      return View('editora.show', compact('editora'));
+    }
 }

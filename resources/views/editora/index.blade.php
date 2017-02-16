@@ -28,6 +28,7 @@
                     <th>Id</th>
                     <th>Nome</th>
                     <th>Email</th>
+                    <th>#</th>
                   </tr>
               </thead>
               <tbody>
@@ -41,6 +42,9 @@
                   </td>
                   <td>
                      {{$editora->email}}
+                  </td>
+                  <td>
+                    <a href="/editoras/{{$editora}}">Detalhes</a>
                   </td>
               </tr>
               @endforeach

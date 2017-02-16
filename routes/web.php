@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 //cria rota para editoras
 Route::get('/editoras', 'EditoraController@index');
+
+//Rota para url da editora/1
+Route::get('/editoras/{editora}','EditoraController@show');
